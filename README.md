@@ -1,4 +1,17 @@
+## Live Demo
 https://abskyblu-create.github.io/fraud-detection-dashboard/
+
+---------------------------------------
+Credit Card Fraud Detection
+---------------------------------------
+
+## Local Development 
+npm install
+npm run dev
+
+## Docker 
+docker build -t fraud-dashboard .
+docker run -p 8080:80 fraud-dashboard
 
 
 ## Run Locally
