@@ -1,12 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+## Live Demo
+https://abskyblu-create.github.io/fraud-detection-dashboard/
 
-# Run and deploy your AI Studio app
+---------------------------------------
+Credit Card Fraud Detection
+---------------------------------------
 
-This contains everything you need to run your app locally.
+## Local Development 
+npm install
+npm run dev
 
-View your app in AI Studio: https://ai.studio/apps/drive/1bavRB39DGI9HaJxkFdCTfpp7mQKZCfqW
+## Docker 
+docker build -t fraud-dashboard .
+docker run -p 8080:80 fraud-dashboard
+
 
 ## Run Locally
 
