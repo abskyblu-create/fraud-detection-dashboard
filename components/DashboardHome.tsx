@@ -9,7 +9,7 @@ const DashboardHome: React.FC = () => {
         <h2 className="text-3xl font-bold text-slate-800">Problem Statement</h2>
         <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
           <p className="text-slate-600 leading-relaxed text-lg">
-            Bank account opening fraud poses a significant challenge to financial institutions, 
+            Bank credit fraud poses a significant challenge to financial institutions, 
             resulting in substantial financial losses and erosion of customer trust. 
             Fraudsters use synthetic identities or stolen credentials to open new accounts 
             for money laundering or illegal transactions. 
