@@ -1,0 +1,29 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay2
+
+stages:
+  - build
+  - push
+
+before_script:
+  - docker login -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_TOKEN"
+
+build_image:
+  stage: build
+  script:
+    - docker build -t fraud-dashboard .
+    - docker tag fraud-dashboard ankitdevinci/fraud-dashboard:latest
+  only:
+    - main
+
+push_image:
+  stage: push
+  script:
+    - docker push ankitdevinci/fraud-dashboard:latest
+  only:
+    - main
